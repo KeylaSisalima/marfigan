@@ -11,27 +11,29 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:#e6eeee;
     color:#111;
-    line-height:1.7;
+    line-height:1.8;
+    font-size:18px;
 }
 
 /* HEADER / NAV */
 header{
     background:#063636;
     color:white;
-    padding:20px 6%;
+    padding:25px 6%;
 }
 
 nav{
     display:flex;
     justify-content:center;
     gap:30px;
-    margin-top:10px;
+    margin-top:15px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    font-size:18px;
 }
 
 /* HERO */
@@ -39,25 +41,25 @@ nav a{
     background:linear-gradient(180deg,#063636,#0f5f5f);
     color:white;
     text-align:center;
-    padding:80px 8%;
+    padding:100px 8%;
 }
 
 .hero h1{
-    font-size:72px;
+    font-size:80px;
     margin-bottom:15px;
     letter-spacing:6px;
 }
 
 .hero p{
-    font-size:24px;
+    font-size:28px;
     max-width:900px;
-    margin:20px auto 0 auto;
+    margin:15px auto 0 auto;
     font-weight:500;
 }
 
 /* SECCIONES */
 section{
-    padding:60px 8%;
+    padding:70px 8%;
 }
 
 .section-light{
@@ -73,19 +75,19 @@ section{
 }
 
 section h2{
-    font-size:36px;
+    font-size:44px;
     color:#063636;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 section h3{
-    font-size:24px;
+    font-size:28px;
     color:#0f5f5f;
-    margin-top:25px;
+    margin-top:30px;
 }
 
 section p{
-    font-size:18px;
+    font-size:20px;
     max-width:1200px;
 }
 
@@ -93,70 +95,70 @@ section p{
 .products-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
     margin-top:30px;
 }
 
 .product{
     background:white;
-    padding:20px;
-    border-left:6px solid #0f5f5f;
+    padding:25px;
+    border-left:8px solid #0f5f5f;
 }
 
 .product h3{
-    font-size:20px;
-    margin-bottom:10px;
+    font-size:22px;
+    margin-bottom:12px;
 }
 
 .product p{
-    font-size:16px;
+    font-size:18px;
 }
 
 /* CONTACTO */
 .contact-section{
     background:#063636;
     color:white;
-    padding:60px 8%;
+    padding:70px 8%;
 }
 
 .contact-container{
     max-width:800px;
     background:#f4f8f8;
     color:#111;
-    padding:40px;
+    padding:50px;
     margin-top:30px;
 }
 
 form{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:20px;
+    gap:25px;
 }
 
 form label{
     font-weight:bold;
-    font-size:16px;
+    font-size:18px;
 }
 
 form input, form textarea{
     width:100%;
-    padding:10px;
-    font-size:16px;
+    padding:12px;
+    font-size:18px;
     border:1px solid #999;
 }
 
 form textarea{
     grid-column:1 / 3;
     resize:none;
-    height:120px;
+    height:150px;
 }
 
 form button{
     grid-column:1 / 3;
-    padding:14px;
+    padding:16px;
     background:#063636;
     color:white;
-    font-size:18px;
+    font-size:20px;
     border:none;
     cursor:pointer;
 }
@@ -176,8 +178,8 @@ footer{
 <header>
     <nav>
         <a href="#inicio">Inicio</a>
-        <a href="#empresa">La Empresa</a>
-        <a href="#procesos">Procesos</a>
+        <a href="#mision-vision">Misión y Visión</a>
+        <a href="#objetivos">Objetivos</a>
         <a href="#productos">Productos</a>
         <a href="#contacto">Contacto</a>
     </nav>
@@ -192,33 +194,28 @@ footer{
     </p>
 </div>
 
-<section class="section-light" id="empresa">
-    <h2>La Empresa</h2>
-    <p>
-        MARFIGAN S.A. es una empresa camaronera que desarrolla sus operaciones bajo
-        principios técnicos, normativos y éticos, garantizando productos de alta calidad
-        para el mercado nacional e internacional.
-    </p>
-
+<section class="section-light" id="mision-vision">
+    <h2>Misión y Visión</h2>
     <h3>Misión</h3>
     <p>
-        Producir camarón de alta calidad mediante procesos responsables y sostenibles.
+        Producir camarón de alta calidad mediante procesos responsables y sostenibles,
+        garantizando seguridad alimentaria y satisfacción del cliente.
     </p>
-
     <h3>Visión</h3>
     <p>
-        Ser referente del sector camaronero por nuestra excelencia productiva y compromiso ambiental.
+        Ser líder en el sector camaronero nacional e internacional, reconocido por la excelencia,
+        innovación y compromiso ambiental en cada etapa de nuestra operación.
     </p>
 </section>
 
-<section class="section-medium" id="procesos">
-    <h2>Procesos Productivos</h2>
+<section class="section-medium" id="objetivos">
+    <h2>Objetivos</h2>
     <ul>
-        <li>Manejo técnico de piscinas camaroneras</li>
-        <li>Control de calidad del agua y alimentación</li>
-        <li>Monitoreo sanitario permanente</li>
-        <li>Cosecha bajo protocolos estrictos</li>
-        <li>Procesamiento y conservación del producto</li>
+        <li>Garantizar la calidad y frescura del camarón desde el cultivo hasta la entrega.</li>
+        <li>Incrementar la participación en mercados internacionales.</li>
+        <li>Implementar prácticas sostenibles y responsables con el medio ambiente.</li>
+        <li>Optimizar la eficiencia operativa y la trazabilidad de nuestros productos.</li>
+        <li>Fortalecer la confianza y satisfacción de nuestros clientes.</li>
     </ul>
 </section>
 
