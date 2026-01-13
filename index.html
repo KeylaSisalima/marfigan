@@ -18,7 +18,7 @@ body{
 
 /* HEADER / NAV */
 header{
-    background:#0b3c5d; /* Diferente del resto para destacarlo */
+    background:#0b3c5d;
     color:white;
     padding:15px 6%;
     position:sticky;
@@ -43,6 +43,12 @@ nav a{
 
 nav a:hover{
     color:#1ca3ec;
+}
+
+/* FRANJA DE SEPARACION */
+.franja{
+    background:#1ca3ec;
+    height:6px;
 }
 
 /* HERO */
@@ -136,6 +142,8 @@ section p, section li{
 .contact-section h2{
     text-align:center;
     margin-bottom:40px;
+    font-size:44px;
+    font-weight:bold;
 }
 
 .contact-container{
@@ -211,6 +219,8 @@ footer{
     </nav>
 </header>
 
+<div class="franja"></div>
+
 <div class="hero" id="inicio">
     <h1>MARFIGAN</h1>
     <p>Calidad que nace del mar y llega al mundo</p>
@@ -248,6 +258,7 @@ footer{
     <h2>Portafolio de Productos</h2>
     <div class="products-container">
         <!-- 30 productos -->
+        <!-- Se pueden ajustar nombres -->
         <div class="product"><h3>Camarón Entero 1</h3><p>Alta calidad y frescura, consumo nacional.</p></div>
         <div class="product"><h3>Camarón Entero 2</h3><p>Alta calidad y frescura, consumo nacional.</p></div>
         <div class="product"><h3>Camarón Entero 3</h3><p>Alta calidad y frescura, consumo nacional.</p></div>
@@ -282,7 +293,7 @@ footer{
 </section>
 
 <section class="contact-section" id="contacto">
-    <h2>Contacto Empresarial</h2>
+    <h2>CONTACTO</h2>
     <div class="contact-container">
         <form>
             <div>
