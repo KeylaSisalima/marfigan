@@ -3,39 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARFIGAN | Empresa Camaronera</title>
+<title>MARFIGAN | Camaronera</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
-:root{
-    --azul:#0f3d3e;
-    --verde:#2f7f7b;
-    --gris:#f2f4f5;
-    --oscuro:#1e1e1e;
-}
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
 body{
-    background:var(--gris);
-    color:var(--oscuro);
-    line-height:1.5;
-}
-
-/* HEADER */
-header{
-    background:linear-gradient(140deg, #0b3435, #1f6f73, #2f8f8b);
-    color:white;
+    background:#e9f1f1;
+    color:#1b1b1b;
 }
 
 /* NAV */
 nav{
+    background:#083d3d;
+    color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -44,204 +32,189 @@ nav{
 
 nav h1{
     font-size:32px;
+    font-weight:900;
     letter-spacing:3px;
-    font-weight:800;
 }
 
 nav ul{
     list-style:none;
     display:flex;
-    gap:26px;
+    gap:25px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    font-size:17px;
-    font-weight:500;
+    font-weight:600;
 }
 
 /* HERO */
 #inicio{
-    padding:70px 10% 75px;
-    text-align:center;
+    min-height:100vh;
+    background:linear-gradient(160deg,#0b4f4f,#0f6f6a,#1fa19b);
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:0 10%;
 }
 
 #inicio h2{
-    font-size:78px;
-    font-weight:800;
-    margin-bottom:10px;
-    letter-spacing:2px;
+    font-size:72px;
+    font-weight:900;
+    line-height:1.1;
+    margin-bottom:20px;
 }
 
-#inicio .slogan{
-    font-size:40px;
-    font-weight:700;
-    margin-bottom:22px;
+#inicio h3{
+    font-size:34px;
+    margin-bottom:25px;
 }
 
 #inicio p{
-    max-width:900px;
-    margin:0 auto 30px;
-    font-size:22px;
-}
-
-/* BOTONES */
-.botones{
-    display:flex;
-    justify-content:center;
-    gap:22px;
-}
-
-.btn{
-    padding:18px 44px;
-    border-radius:45px;
     font-size:20px;
-    font-weight:700;
-    text-decoration:none;
-    background:white;
-    color:var(--azul);
-}
-
-.btn.sec{
-    background:transparent;
-    border:3px solid white;
-    color:white;
+    max-width:900px;
+    line-height:1.7;
 }
 
 /* SECCIONES */
 section{
     background:white;
-    padding:65px 10%;
-    margin-bottom:14px;
+    margin:15px auto;
+    padding:50px 10%;
+    max-width:1400px;
+    border-radius:10px;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .section-title h2{
     font-size:38px;
-    color:var(--azul);
-    font-weight:800;
+    font-weight:900;
+    color:#0b4f4f;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    font-size:18px;
+    max-width:900px;
 }
 
 /* PRODUCTOS */
 .productos{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .producto{
-    background:var(--gris);
-    padding:32px;
-    border-radius:14px;
+    background:#f0f6f6;
+    padding:25px;
+    border-left:6px solid #1fa19b;
 }
 
 .producto h3{
-    color:var(--verde);
-    margin-bottom:12px;
-    font-size:24px;
+    font-size:22px;
+    color:#0b4f4f;
+    margin-bottom:10px;
+}
+
+.producto p{
+    font-size:16px;
+    line-height:1.6;
 }
 
 /* CONTACTO */
 #contacto{
-    background:var(--azul);
+    background:#083d3d;
     color:white;
-    text-align:center;
 }
 
 /* FOOTER */
 footer{
-    background:#082626;
+    background:#052828;
     color:white;
     text-align:center;
-    padding:22px;
-}
-
-@media(max-width:768px){
-    #inicio h2{
-        font-size:46px;
-    }
-    #inicio .slogan{
-        font-size:26px;
-    }
+    padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
 <nav>
     <h1>MARFIGAN</h1>
     <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#quienes">Quiénes somos</a></li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#contacto">Contacto</a></li>
     </ul>
 </nav>
 
 <section id="inicio">
+<div>
     <h2>MARFIGAN</h2>
-    <div class="slogan">Excelencia camaronera nacida en el mar del Ecuador</div>
-
+    <h3>Producción camaronera con estándares de excelencia internacional</h3>
     <p>
-        Empresa camaronera ecuatoriana dedicada al cultivo,
-        producción y comercialización de camarón con altos
-        estándares de calidad, sostenibilidad y compromiso
-        con el desarrollo del sector acuícola.
+        Somos una empresa ecuatoriana dedicada al cultivo, procesamiento y
+        comercialización de camarón de alta calidad. Nuestro compromiso se
+        basa en la eficiencia productiva, el control sanitario riguroso y el
+        respeto al medio ambiente, garantizando productos confiables para
+        mercados nacionales e internacionales.
     </p>
-
-    <div class="botones">
-        <a href="#productos" class="btn">Nuestros productos</a>
-        <a href="#nosotros" class="btn sec">Sobre nosotros</a>
-    </div>
+</div>
 </section>
-</header>
 
 <section id="nosotros">
 <div class="section-title">
     <h2>Nosotros</h2>
+    <p>Comprometidos con el desarrollo sostenible del sector acuícola.</p>
 </div>
 <p>
-    MARFIGAN es una empresa camaronera orientada a la excelencia,
-    la ética empresarial y la mejora continua de sus procesos
-    productivos.
-</p>
-</section>
-
-<section id="quienes">
-<div class="section-title">
-    <h2>Quiénes Somos</h2>
-</div>
-<p>
-    Somos un equipo humano capacitado que aplica buenas prácticas
-    acuícolas y control sanitario en cada etapa de producción.
+    MARFIGAN opera bajo procesos técnicos controlados, aplicando buenas
+    prácticas acuícolas, bioseguridad y trazabilidad. Nuestro equipo humano
+    está conformado por profesionales con experiencia en producción,
+    control de calidad y gestión empresarial.
 </p>
 </section>
 
 <section id="productos">
 <div class="section-title">
     <h2>Productos</h2>
+    <p>Amplia línea de camarón adaptada a las exigencias del mercado.</p>
 </div>
 
 <div class="productos">
     <div class="producto">
-        <h3>Camarón Entero</h3>
-        <p>Producto fresco bajo controles de calidad.</p>
+        <h3>Camarón Entero Fresco</h3>
+        <p>Producto de cosecha directa con óptima calidad y frescura.</p>
     </div>
+
     <div class="producto">
-        <h3>Camarón Congelado</h3>
-        <p>Procesado y conservado para exportación.</p>
+        <h3>Camarón Entero Congelado</h3>
+        <p>Procesado y conservado bajo estándares sanitarios.</p>
     </div>
+
     <div class="producto">
-        <h3>Camarón de Exportación</h3>
-        <p>Selección especial para mercados internacionales.</p>
+        <h3>Camarón sin Cabeza</h3>
+        <p>Presentación ideal para exportación y procesamiento industrial.</p>
+    </div>
+
+    <div class="producto">
+        <h3>Camarón Clasificado por Talla</h3>
+        <p>Producto estandarizado según requerimientos comerciales.</p>
+    </div>
+
+    <div class="producto">
+        <h3>Camarón Premium</h3>
+        <p>Selección especial para mercados internacionales exigentes.</p>
+    </div>
+
+    <div class="producto">
+        <h3>Camarón Procesado</h3>
+        <p>Producto con valor agregado para distribución comercial.</p>
     </div>
 </div>
 </section>
@@ -249,8 +222,10 @@ footer{
 <section id="contacto">
 <div class="section-title">
     <h2>Contacto</h2>
+    <p>Información de contacto empresarial.</p>
 </div>
-<p>📧 marfigansa@hotmail.com</p>
+<p>📧 contacto@marfigan.com</p>
+<p>📞 +593 99 999 9999</p>
 <p>📍 Ecuador</p>
 </section>
 
