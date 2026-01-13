@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MARFIGAN | Empresa Camaronera</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
     --azul:#0f3d3e;
     --verde:#2f7f7b;
-    --celeste:#6fbfc0;
-    --gris:#f3f5f6;
+    --gris:#f2f4f5;
     --oscuro:#1e1e1e;
 }
 
@@ -26,12 +25,12 @@
 body{
     background:var(--gris);
     color:var(--oscuro);
-    line-height:1.6;
+    line-height:1.5;
 }
 
 /* HEADER */
 header{
-    background:linear-gradient(135deg, #0f3d3e, #1f6f73);
+    background:linear-gradient(140deg, #0b3435, #1f6f73, #2f8f8b);
     color:white;
 }
 
@@ -44,61 +43,61 @@ nav{
 }
 
 nav h1{
-    font-size:30px;
-    letter-spacing:2px;
+    font-size:32px;
+    letter-spacing:3px;
+    font-weight:800;
 }
 
 nav ul{
     list-style:none;
     display:flex;
-    gap:25px;
+    gap:26px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
+    font-size:17px;
     font-weight:500;
-    font-size:16px;
 }
 
 /* HERO */
 #inicio{
-    padding:70px 10% 80px;
+    padding:70px 10% 75px;
     text-align:center;
-    background:linear-gradient(160deg, #0f3d3e, #1f6f73, #2f8f8b);
 }
 
 #inicio h2{
-    font-size:56px;
-    font-weight:700;
+    font-size:78px;
+    font-weight:800;
     margin-bottom:10px;
+    letter-spacing:2px;
 }
 
 #inicio .slogan{
-    font-size:26px;
-    font-weight:500;
-    margin-bottom:20px;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:22px;
 }
 
 #inicio p{
-    max-width:850px;
+    max-width:900px;
     margin:0 auto 30px;
-    font-size:20px;
+    font-size:22px;
 }
 
 /* BOTONES */
 .botones{
     display:flex;
     justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+    gap:22px;
 }
 
 .btn{
-    padding:16px 38px;
-    border-radius:40px;
-    font-size:18px;
-    font-weight:600;
+    padding:18px 44px;
+    border-radius:45px;
+    font-size:20px;
+    font-weight:700;
     text-decoration:none;
     background:white;
     color:var(--azul);
@@ -106,25 +105,26 @@ nav a{
 
 .btn.sec{
     background:transparent;
-    border:2px solid white;
+    border:3px solid white;
     color:white;
 }
 
 /* SECCIONES */
 section{
     background:white;
-    padding:70px 10%;
-    margin-bottom:15px;
+    padding:65px 10%;
+    margin-bottom:14px;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:35px;
+    margin-bottom:30px;
 }
 
 .section-title h2{
-    font-size:36px;
+    font-size:38px;
     color:var(--azul);
+    font-weight:800;
 }
 
 /* PRODUCTOS */
@@ -136,18 +136,14 @@ section{
 
 .producto{
     background:var(--gris);
-    padding:30px;
+    padding:32px;
     border-radius:14px;
 }
 
 .producto h3{
     color:var(--verde);
     margin-bottom:12px;
-    font-size:22px;
-}
-
-.producto p{
-    font-size:16px;
+    font-size:24px;
 }
 
 /* CONTACTO */
@@ -159,7 +155,7 @@ section{
 
 /* FOOTER */
 footer{
-    background:#0a2a2a;
+    background:#082626;
     color:white;
     text-align:center;
     padding:22px;
@@ -167,10 +163,10 @@ footer{
 
 @media(max-width:768px){
     #inicio h2{
-        font-size:38px;
+        font-size:46px;
     }
     #inicio .slogan{
-        font-size:20px;
+        font-size:26px;
     }
 }
 </style>
@@ -192,17 +188,18 @@ footer{
 
 <section id="inicio">
     <h2>MARFIGAN</h2>
-    <div class="slogan">Calidad acuícola que conecta al Ecuador con el mundo</div>
+    <div class="slogan">Excelencia camaronera nacida en el mar del Ecuador</div>
 
     <p>
         Empresa camaronera ecuatoriana dedicada al cultivo,
-        producción y comercialización de camarón bajo estándares
-        de calidad y sostenibilidad.
+        producción y comercialización de camarón con altos
+        estándares de calidad, sostenibilidad y compromiso
+        con el desarrollo del sector acuícola.
     </p>
 
     <div class="botones">
         <a href="#productos" class="btn">Nuestros productos</a>
-        <a href="#nosotros" class="btn sec">Conócenos</a>
+        <a href="#nosotros" class="btn sec">Sobre nosotros</a>
     </div>
 </section>
 </header>
@@ -212,9 +209,9 @@ footer{
     <h2>Nosotros</h2>
 </div>
 <p>
-    MARFIGAN es una empresa camaronera comprometida con la
-    excelencia productiva, la ética empresarial y el desarrollo
-    sostenible del sector acuícola.
+    MARFIGAN es una empresa camaronera orientada a la excelencia,
+    la ética empresarial y la mejora continua de sus procesos
+    productivos.
 </p>
 </section>
 
@@ -224,7 +221,7 @@ footer{
 </div>
 <p>
     Somos un equipo humano capacitado que aplica buenas prácticas
-    acuícolas y control sanitario en cada etapa del proceso productivo.
+    acuícolas y control sanitario en cada etapa de producción.
 </p>
 </section>
 
@@ -236,7 +233,7 @@ footer{
 <div class="productos">
     <div class="producto">
         <h3>Camarón Entero</h3>
-        <p>Producto fresco con altos estándares de calidad.</p>
+        <p>Producto fresco bajo controles de calidad.</p>
     </div>
     <div class="producto">
         <h3>Camarón Congelado</h3>
